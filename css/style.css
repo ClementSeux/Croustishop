@@ -1,0 +1,273 @@
+@font-face {
+	font-family:  "Kenia";
+	src:  url(../fonts/Kenia-Regular.ttf) format("truetype");
+	/*font-stretch: wider;*/
+}
+
+body {
+	background-color: #1695DA;
+	line-height: 0;
+	margin: 0;
+}
+
+.accueil {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.box {
+	background-color: white;
+	padding: 20px;
+
+	position: absolute;
+	top: 10vw;
+	z-index: 999;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.titre {
+	font-family: "Kenia", cursive;
+
+}
+
+h1.titre {
+	font-size: 50px;
+}
+
+p.titre {
+	font-size: 20px;
+}
+
+img {
+	width: 70vw;
+}
+
+.slider {
+	width: calc(100vw);
+	overflow: hidden;
+	
+	
+}
+
+.slides {
+	display: inline-flex;
+	width: calc(70vw * 6);
+	transform: translateX(-55vw);
+
+	animation: glisse 15s infinite;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+.slide {
+	float: left;
+	opacity: 0.7;
+	
+	
+}
+
+@keyframes glisse {
+	from {
+		transform: translateX(-55vw);
+	}
+	10% {
+		transform: translateX(-55vw);
+	}
+	25% {
+		transform: translateX(-125vw);
+	}
+	35% {
+		transform: translateX(-125vw);
+	}
+	50% {
+		transform: translateX(-195vw);
+	}
+	60% {
+		transform: translateX(-195vw);
+	}
+	75% {
+		transform: translateX(-265vw);
+	}
+	85% {
+		transform: translateX(-265w);
+	}
+	
+}
+
+/* navigation menu */
+.liste-menu{
+	margin: 0;
+	padding: 0;
+
+}
+
+.menu ul li {
+	list-style-type: none;
+}
+
+.liste-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.button {
+	flex-grow: 1;
+
+	
+	padding: 5vh;
+
+	text-align: center;
+
+	font-family: "Kenia", cursive;
+	font-size: 30px;
+	
+}
+
+.pizzas {
+	background-image: url(../img/pizza-banner.jpg);
+	background-size:  cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.salades {
+	background-image: url(../img/salad-banner.jpg);
+	background-size:  cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.burgers {
+	background-image: url(../img/burger-banner.jpg);
+	background-size:  cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.boissons {
+	background-image: url(../img/boisson-banner.jpg);
+	background-size:  cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Carte */
+
+.sous-titres {
+	font-family: "Kenia", cursive;
+	font-size: 40px;
+	font-weight: 150;
+	margin-left: 15px;
+}
+
+.carte {
+	background-image: url(../img/pizza-banner.jpg);
+	background-size:  cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	margin: 0;
+	padding: 25px 20px 25px 20px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.carte-pizzas {
+	background-image: url(../img/pizza-banner.jpg);
+}
+
+.carte-salades {
+	background-image: url(../img/salad-banner.jpg);
+}
+
+.carte-burgers {
+	background-image: url(../img/burger-banner.jpg);
+}
+
+.carte-boissons {
+	background-image: url(../img/boisson-banner.jpg);
+}
+
+.produit {
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+}
+
+
+
+.description {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1.5;
+	padding: 10px;
+	background-color: #DDDACC;
+}
+
+.image-plat  {
+	background-image: url(../img/pizza1.jpg);
+	height: 20vh;
+	min-height: 150px;
+	flex-basis: 40vh;
+	flex-grow: 0;
+	background-size:  cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.caprapiquante {
+	background-image: url(../img/pizza1.jpg);
+}
+
+.strategia {
+	background-image: url(../img/pizza2.jpg);
+}
+
+.naturale {
+	background-image: url(../img/pizza3.jpg);	
+}
+
+.salade-poulet {
+	background-image: url(../img/salade1.jpg);
+}
+
+.salade-grec {
+	background-image: url(../img/salade2.jpg);
+}
+
+.salade-tomates {
+	background-image: url(../img/salade3.jpg);
+}
+
+.legendaire {
+	background-image: url(../img/burger1.jpg);
+}
+
+.villageois {
+	background-image: url(../img/burger2.jpg);
+}
+
+.basique {
+	background-image: url(../img/burger3.jpg);	
+}
+
+.orangeade {
+	background-image: url(../img/boisson1.jpg);	
+}
+
+.pastaca {
+	background-image: url(../img/boisson2.jpg);	
+}
+
+.café {
+	background-image: url(../img/boisson3.jpg);	
+}
+
+
